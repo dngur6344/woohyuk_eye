@@ -25,13 +25,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="568" height="80"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pull the woohyuk's eye:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSl-jG-pDE">
-                                                <rect key="frame" x="195" y="30.5" width="178.5" height="20.5"/>
+                                                <rect key="frame" x="195" y="29" width="178.5" height="22"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYW-SD-GcP">
-                                                <rect key="frame" x="380.5" y="29.5" width="28.5" height="21"/>
+                                                <rect key="frame" x="380.5" y="30" width="28.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -39,11 +39,10 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="OSl-jG-pDE" firstAttribute="centerX" secondItem="LRy-sr-OmJ" secondAttribute="centerX" id="6LM-Xe-pTy"/>
-                                            <constraint firstItem="xYW-SD-GcP" firstAttribute="top" secondItem="LRy-sr-OmJ" secondAttribute="top" constant="29.5" id="IYJ-ar-1HI"/>
+                                            <constraint firstItem="xYW-SD-GcP" firstAttribute="centerY" secondItem="LRy-sr-OmJ" secondAttribute="centerY" id="4Je-NF-bm1"/>
+                                            <constraint firstItem="OSl-jG-pDE" firstAttribute="centerY" secondItem="LRy-sr-OmJ" secondAttribute="centerY" id="KOM-Jw-Gdu"/>
                                             <constraint firstAttribute="bottom" secondItem="OSl-jG-pDE" secondAttribute="bottom" constant="29" id="N1b-sF-FmV"/>
-                                            <constraint firstItem="xYW-SD-GcP" firstAttribute="centerY" secondItem="LRy-sr-OmJ" secondAttribute="centerY" id="RHO-3s-VaT"/>
-                                            <constraint firstAttribute="bottom" secondItem="xYW-SD-GcP" secondAttribute="bottom" constant="29.5" id="uhA-ZX-E1I"/>
+                                            <constraint firstItem="OSl-jG-pDE" firstAttribute="centerX" secondItem="LRy-sr-OmJ" secondAttribute="centerX" id="VEs-pz-WT1"/>
                                             <constraint firstItem="xYW-SD-GcP" firstAttribute="leading" secondItem="OSl-jG-pDE" secondAttribute="trailing" constant="7" id="zd7-vx-XEt"/>
                                         </constraints>
                                     </view>

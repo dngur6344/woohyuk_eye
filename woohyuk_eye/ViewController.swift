@@ -24,14 +24,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func showAlert(){
-        let difference =  abs(targetValue-currentVal)
-        let points = 100 - difference
-        
-        let message = "You scored \(points)"
+        let message = "The value of the slider is: \(currentValue)"+"\nThe target value is: \(targetValue)"
         let alert = UIAlertController(title: "Hello, World",message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome",style: .default, handler: nil)
         alert.addAction(action)
         present(alert,animated: true, completion:nil)
+        startNewRound()
     }
     @IBAction func sliderMoved(_ slider: UISlider){
         currentValue = lroundf(slider.value)
