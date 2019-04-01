@@ -205,6 +205,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="roundLabel" destination="ndq-qR-dI6" id="O79-tP-pHA"/>
                         <outlet property="scoreLabel" destination="Lai-IQ-0lq" id="WmR-b0-odb"/>
                         <outlet property="slider" destination="yce-9y-7ly" id="Wax-wH-SGF"/>
                         <outlet property="targetLabel" destination="xYW-SD-GcP" id="9oV-fw-W6d"/>
