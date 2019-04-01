@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet weak var targetLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var scoreLabel: UILabel!
     var currentVal=50
     var targetValue=0
     var score=0
@@ -24,7 +25,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     @IBAction func showAlert(){
-        let message = "The value of the slider is: \(currentValue)"+"\nThe target value is: \(targetValue)"
+        let difference = abs(targetValue-currentVal)
+        let points = 100 - difference
+        score+=points
+        let message = "You scored \(points)"
         let alert = UIAlertController(title: "Hello, World",message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "Awesome",style: .default, handler: nil)
         alert.addAction(action)
@@ -41,8 +45,9 @@ class ViewController: UIViewController {
         slider.value = Float(currentValue)
         updateLabels()
     }
-    func updateLabels(){//
-        targetLabel.text=String(targetValue)
+    func updateLabels(){
+        targetLabel.text = String(targetValue)
+        scoreLabel.text = String(score)
     }
 }
 
