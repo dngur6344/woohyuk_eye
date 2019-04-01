@@ -111,17 +111,18 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yp-8T-Zrm">
                                                         <rect key="frame" x="0.0" y="0.0" width="142" height="80"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEC-gZ-3Il">
-                                                                <rect key="frame" x="31.5" y="30" width="79" height="20.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucw-Nf-E33">
+                                                                <rect key="frame" x="40" y="25" width="71" height="30"/>
+                                                                <state key="normal" title="Start Over"/>
+                                                                <connections>
+                                                                    <action selector="startNewGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="D3R-Bc-Q1f"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstItem="aEC-gZ-3Il" firstAttribute="centerX" secondItem="5yp-8T-Zrm" secondAttribute="centerX" id="Ry8-pQ-XJp"/>
-                                                            <constraint firstItem="aEC-gZ-3Il" firstAttribute="centerY" secondItem="5yp-8T-Zrm" secondAttribute="centerY" id="gNj-Fd-neJ"/>
+                                                            <constraint firstItem="Ucw-Nf-E33" firstAttribute="centerY" secondItem="5yp-8T-Zrm" secondAttribute="centerY" id="NJ2-Ju-TfD"/>
+                                                            <constraint firstItem="Ucw-Nf-E33" firstAttribute="centerX" secondItem="5yp-8T-Zrm" secondAttribute="centerX" id="wYW-Je-zaI"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFm-yd-uBl">
